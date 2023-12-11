@@ -21,13 +21,13 @@ class BonusServiceTest {
 
     @Test
     @DisplayName("Test Calc Bonus Right")
-    void Test_CalcBonus_Right(){
+    void test_CalcBonus_Right(){
         assertEquals(sales * 0.1, service.calcBonus(sales));
     }
 
     @Test
     @DisplayName("Test Calc Bonus Wrong")
-    void Test_CalcBonus_Wrong(){
+    void test_CalcBonus_Wrong(){
         assertNotEquals(sales * 0.2, service.calcBonus(sales));
     }
 
